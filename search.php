@@ -24,7 +24,39 @@ $items = array(
 "Colosseo"=>" ",
 "Constantine"=>" ",
 "Hadrian"=>" ",
-"Hao "$key|$value\n";
+"Hadrian's Villa"=>" ",
+"Hotel"=>" ",
+"Il Vittoriano"=>" ",
+"Lazio"=>" ",
+"Michelangelo"=>" ",
+"Pantheon"=>" ",
+"Quirinal Palace"=>" ",
+"Roma"=>" ",
+"Roman Forum"=>" ",
+"Rome"=>" ",
+"Sistine Chapel"=>" ",
+"Spanish Steps"=>" ",
+"St. Peter"=>" ",
+"St. Peter's Basilica"=>" ",
+"Termini"=>" ",
+"Tivoli"=>" ",
+"Tour"=>" ",
+"Trajan"=>" ",
+"Trastevere"=>" ",
+"Trevi Fountain"=>" ",
+"Underground Rome Tour"=>" ",
+"Vatican"=>" ",
+"Vatican City"=>" ",
+"Vatican Museums"=>" ",
+"Villa Borghese"=>" ",
+"Villa d'Este"=>" ",
+"Villa"=>" ",
+"Vittore Emanuele II"=>" "
+);
+
+foreach ($items as $key=>$value) {
+	if (strpos(strtolower($key), $q) !== false) {
+		echo "$key|$value\n";
 	}
 }
 
